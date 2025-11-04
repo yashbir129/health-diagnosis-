@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Diagnosis System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="{{ url_for('static', filename='images/logo.svg') }}" alt="Logo" class="logo">
+            <h1>Health Diagnosis System</h1>
+            <nav>
+                <ul>
+                    <li><a href="{{ url_for('index') }}">Home</a></li>
+                    <li><a href="{{ url_for('about') }}">About</a></li>
+                    <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>Enter Patient Information for Heart Disease Prediction</h2>
+            <form action="/predict" method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="name">Patient Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" required>
+                </div>
+                <div class="form-group">
+                    <label for="sex">Sex (1 = male; 0 = female):</label>
+                    <input type="number" id="sex" name="sex" required>
+                </div>
+                <div class="form-group">
+                    <label for="condition_description">Describe Your Condition/Symptoms:</label>
+                    <textarea id="condition_description" name="condition_description" rows="4" placeholder="Please describe your current symptoms, medical history, or any relevant health information..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="pdf_report">Upload Medical Report (PDF) - Optional:</label>
+                    <input type="file" id="pdf_report" name="pdf_report" accept=".pdf">
+                    <small style="color: #666;">You can either upload a PDF report OR describe your condition above, or both.</small>
+                </div>
+                <button type="submit" class="btn">Get Diagnosis</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Health Diagnosis System</p>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
