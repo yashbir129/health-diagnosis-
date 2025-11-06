@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Flask
+instance/
+.env
+.flaskenv
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Node (if any front-end tooling is added later)
+node_modules/
+
+# Logs
+*.log
+
+# Cache
+.cache/
+.pytest_cache/
+
+# PyCharm / VSCode
+.idea/
+.vscode/
+
+# Build artifacts
+dist/
+build/
+
+# Data artifacts (keep datasets but ignore large intermediates)
+data/*.tmp
+data/*.cache
