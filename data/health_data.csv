@@ -1,0 +1,11 @@
+Age,Gender,BloodPressure,Cholesterol,MedicalHistory,CurrentCondition,Disease
+25,Male,120,200,None,Fever,Common Cold
+30,Female,130,220,Flu,Cough,Flu
+35,Male,125,210,Cold,Sore Throat,Common Cold
+40,Female,140,240,None,Headache,Migraine
+45,Male,135,230,Diabetes,Fatigue,Diabetes
+50,Female,150,260,Hypertension,Chest Pain,Heart Disease
+55,Male,145,250,None,Dizziness,Hypertension
+60,Female,160,280,Heart Disease,Shortness of Breath,Heart Disease
+65,Male,155,270,Diabetes,Nausea,Diabetes
+70,Female,170,300,Hypertension,Blurred Vision,Hypertension
